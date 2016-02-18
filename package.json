@@ -1,0 +1,22 @@
+{
+  "name": "passport-wegene",
+  "version": "0.0.1",
+  "description": "Wegene authentication strategy for Passport and Node.js",
+  "main": "./lib/passport-wegene",
+  "keywords": [
+    "passport",
+    "wegene",
+    "auth",
+    "authentication",
+    "oauth"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/xraywu/passport-wegene.git"
+  },
+  "author": "Eddie Wu",
+  "license": "ISC",
+  "dependencies": {
+    "passport-oauth": "^1.0.0"
+  }
+}
