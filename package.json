@@ -1,6 +1,6 @@
 {
   "name": "passport-wegene",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Wegene authentication strategy for Passport and Node.js",
   "main": "./lib/passport-wegene",
   "keywords": [
