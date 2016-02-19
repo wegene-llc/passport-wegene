@@ -100,7 +100,7 @@ app.get('/login', function(req, res){
 //   redirecting the user to Wegene.com.  After authorization, Wegene will
 //   redirect the user back to this application at /auth/Wegene/callback
 app.get('/auth/wegene',
-  passport.authenticate('Wegene'),
+  passport.authenticate('wegene'),
   function(req, res){
     // The request will be redirected to Wegene for authentication, so this
     // function will not be called.
@@ -112,7 +112,7 @@ app.get('/auth/wegene',
 //   login page.  Otherwise, the primary route function function will be called,
 //   which, in this example, will redirect the user to the home page.
 app.get('/auth/wegene/callback',
-  passport.authenticate('Wegene', {
+  passport.authenticate('wegene', {
     failureRedirect: '/login' }
   ),
   function(req, res) {
