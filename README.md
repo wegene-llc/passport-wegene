@@ -30,7 +30,7 @@ passport.use(new WegeneApiStrategy({
 
 #### Authenticate Requests
 
-Use `passport.authenticate()`, specifying the `'Wegene'` strategy, to
+Use `passport.authenticate()`, specifying the `'wegene'` strategy, to
 authenticate requests.
 
 For example, as route middleware in an [Express](http://expressjs.com/)
@@ -38,14 +38,14 @@ application:
 
 ```javascript
 app.get('/auth/wegene',
-  passport.authenticate('Wegene'),
+  passport.authenticate('wegene'),
   function(req, res){
     // The request will be redirected to Wegene for authentication, so this
     // function will not be called.
 });
 
 app.get('/auth/wegene/callback',
-  passport.authenticate('Wegene', { failureRedirect: '/login' }),
+  passport.authenticate('wegene', { failureRedirect: '/login' }),
   function(req, res) {
     // Successful authentication, redirect home.
     res.redirect('/');
